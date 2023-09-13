@@ -1,7 +1,9 @@
 package com.jasonsilvestre.dscatalog.entities;
 
 import javax.persistence.*;
+
 import java.io.Serializable;
+
 import java.util.Objects;
 
 @Entity
