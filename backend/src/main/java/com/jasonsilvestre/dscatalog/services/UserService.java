@@ -4,6 +4,7 @@ import com.jasonsilvestre.dscatalog.dto.RoleDTO;
 import com.jasonsilvestre.dscatalog.dto.UserDTO;
 
 import com.jasonsilvestre.dscatalog.dto.UserInsertDTO;
+import com.jasonsilvestre.dscatalog.dto.UserUpdateDTO;
 import com.jasonsilvestre.dscatalog.entities.Role;
 import com.jasonsilvestre.dscatalog.entities.User;
 
@@ -65,7 +66,7 @@ public class UserService {
     }
 
     @Transactional
-    public UserDTO update(Long id, UserDTO dto) {
+    public UserDTO update(Long id, UserUpdateDTO dto) {
         try {
             User entity = repository.getOne(id);
             copyDtoToEntity(dto, entity);
